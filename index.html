@@ -2,50 +2,120 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Welcare 3D V95</title>
   <style>
+    /* ฟอนต์และพื้นหลัง */
     body {
-      font-family: sans-serif;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0; 
+      padding: 0;
+      color: #333;
       text-align: center;
     }
+
+    header {
+      background-color: #ee4d2d;
+      padding: 30px 20px;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-weight: 400;
+      font-size: 1.1rem;
+      opacity: 0.85;
+    }
+
     .product {
       background: white;
-      padding: 20px;
-      margin: 20px auto;
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 25px 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
     }
+
+    .product:hover {
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
     .product img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-bottom: 20px;
     }
+
+    .product h2 {
+      margin: 0 0 10px;
+      color: #ee4d2d;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .product p.description {
+      font-size: 1rem;
+      margin: 10px 0 20px;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    .product p.price {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
     .btn {
       display: inline-block;
-      padding: 10px 20px;
-      background: #ee4d2d; /* สีหลักของ Shopee */
+      background-color: #ee4d2d;
       color: white;
-      border-radius: 5px;
+      padding: 14px 40px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-radius: 30px;
       text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgba(238, 77, 45, 0.4);
+    }
+
+    .btn:hover {
+      background-color: #c43c21;
+      box-shadow: 0 6px 15px rgba(196, 60, 33, 0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 440px) {
+      .product {
+        max-width: 90%;
+        padding: 20px 15px;
+      }
+      header {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>ร้าน Welcare Mask</h1>
-    <p>จำหน่ายหน้ากากอนามัย 3D V-Shape V95</p>
+    ร้าน Welcare Mask<br />
+    <p>จำหน่ายหน้ากากอนามัย 3D V-Shape V95 คุณภาพดี ราคาย่อมเยา</p>
   </header>
 
   <section class="product">
-    <img src="https://shopee.co.th/product/50823336/24380303869?uls_trackid=52var40d05a6&utm_campaign=id_AUhEI32bVm&utm_content=----&utm_medium=affiliates&utm_source=an_15399060256&utm_term=d6twb2ikjok4" alt="หน้ากาก Welcare V95" />
+    <img src="https://cf.shopee.co.th/file/2341a1c3f50d73cde5f8fa2d8929d830" alt="หน้ากาก Welcare V95" />
     <h2>Welcare 3D V95 (30 ชิ้น)</h2>
-    <p>หน้ากากอนามัย 3 ชั้นกรอง รุ่นเข้ารูป</p>
-    <p>ราคา: 299 บาท</p>
-   <a href="https://s.shopee.co.th/BI2UjyiVV" class="btn" target="_blank">สั่งซื้อผ่าน Shopee</a>
+    <p class="description">หน้ากากอนามัย 3 ชั้นกรอง รุ่นเข้ารูป ใส่สบาย กระชับใบหน้า เหมาะสำหรับทุกกิจกรรม</p>
+    <p class="price">ราคา: 299 บาท</p>
+    <a href="https://s.shopee.co.th/BI2UjyiVV" class="btn" target="_blank" rel="noopener noreferrer">สั่งซื้อผ่าน Shopee</a>
   </section>
 </body>
 </html>
