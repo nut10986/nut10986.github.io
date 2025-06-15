@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Shop | ร้านค้าของฉัน</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background: #ff6f61;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product-info {
+      padding-left: 1rem;
+    }
+    .product-info h3 {
+      margin-top: 0;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #28a745;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .product {
+        grid-template-columns: 1fr;
+      }
+      .product-info {
+        padding-left: 0;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ร้าน Welcare Shop</h1>
+    <p>หน้ากากอนามัย 3D ราคาประหยัด ปลีก-ส่ง</p>
+  </header>
+
+  <div class="container">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x300" alt="หน้ากาก Welcare V95">
+      <div class="product-info">
+        <h3>Welcare V95 (กล่อง 30 ชิ้น)</h3>
+        <p>หน้ากากอนามัย 3D V-Shape รุ่นกระชับใบหน้า ป้องกัน 3 ชั้น</p>
+        <strong>ราคา: 199 บาท</strong><br />
+        <a class="btn" href="https://lin.ee/xxxxxxxx">สั่งซื้อผ่าน LINE</a>
+      </div>
+    </div>
+    
+    <!-- เพิ่มสินค้าชิ้นอื่นแบบข้างบนได้ -->
+
+  </div>
+
+  <footer>
+    ติดต่อเรา: Line: @welcareshop | Facebook: Welcare Mask<br />
+    &copy; 2025 ร้าน Welcare Shop
+  </footer>
+</body>
+</html>
